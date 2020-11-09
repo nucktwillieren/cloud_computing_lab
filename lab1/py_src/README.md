@@ -8,7 +8,7 @@ so that we can easily use STDIN and STDOUT to receive and transmit data.
 ```bash=
 cat file1 | python3 map.py | python3 reduce.py
 ```
-- For Hadoop, we might need a shellscript to clarify the command.
+- For Hadoop, we might need a shellscript to clarify the command. (run.sh file)
   - Here, we use "mapred streaming" to call the streaming api to connect to Hadoop Mapper and Reducer.
 (mapred => mapper and reducer)
   - In the stage of command "-mapper", we will call python map.py 
