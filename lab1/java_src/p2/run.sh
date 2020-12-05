@@ -6,8 +6,8 @@
 # If you cannot find your file, 
 # try to make the two directories clean and name your files like others.
 
-hadoop com.sun.tools.javac.Main WordCount.java
-jar cf wc.jar WordCount*.class
+hadoop com.sun.tools.javac.Main WordClassify.java
+jar cf wc.jar WordClassify*.class
 
 # Create folder in hadoop file system (fs)
 hadoop fs -mkdir -p /user/s109524012/lab1/input
@@ -19,7 +19,7 @@ hadoop fs -copyFromLocal ./file1 /user/s109524012/lab1/input/file1
 hadoop fs -copyFromLocal ./file2 /user/s109524012/lab1/input/file2
 
 # Run the application
-hadoop jar wc.jar WordCount /user/s109524012/lab1/input /user/s109524012/lab1/output
+hadoop jar wc.jar WordClassify /user/s109524012/lab1/input /user/s109524012/lab1/output
 
 # Cat the result
 hadoop fs -cat /user/s109524012/lab1/output/part-r-00000
